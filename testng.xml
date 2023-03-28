@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Swagger PetStore">
+    
+    <listeners>
+        <listener class-name="api.utilities.ExtentReportManager"/>
+    </listeners>
+    <test verbose="2" preserve-order="true"
+          name="UserTestsDD">
+        <classes>
+            <class name="api.tests.DDUserTests">
+                <methods>
+                    <include name="testPostUser"/>
+                    <include name="testUserByName"/>
+                    <include name="testDeleteUser"/>
+                </methods>
+            </class></classes></test>
+    <test verbose="2" preserve-order="true"
+          name="UserTests">
+        <classes>
+            <class name="api.tests.UserTests">
+                <methods>
+                    <include name="testPostUser"/>
+                    <include name="testUserByName"/>
+                    <include name="testUpdateUser"/>
+                    <include name="testDeleteUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
