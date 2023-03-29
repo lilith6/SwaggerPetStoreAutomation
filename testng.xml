@@ -5,27 +5,16 @@
     <listeners>
         <listener class-name="api.utilities.ExtentReportManager"/>
     </listeners>
-    <test verbose="2" preserve-order="true"
-          name="UserTestsDD">
+
+    <test name="UserTestsDD">
         <classes>
-            <class name="api.tests.DDUserTests">
-                <methods>
-                    <include name="testPostUser"/>
-                    <include name="testUserByName"/>
-                    <include name="testDeleteUser"/>
-                </methods>
-            </class></classes></test>
-    <test verbose="2" preserve-order="true"
-          name="UserTests">
+            <class name="api.tests.DDUserTests"/>
+        </classes>
+    </test>
+
+    <test name="UserTests">
         <classes>
-            <class name="api.tests.UserTests">
-                <methods>
-                    <include name="testPostUser"/>
-                    <include name="testUserByName"/>
-                    <include name="testUpdateUser"/>
-                    <include name="testDeleteUser"/>
-                </methods>
-            </class>
+            <class name="api.tests.UserTests2"/>
         </classes>
     </test>
 </suite>

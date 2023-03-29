@@ -10,8 +10,6 @@
         <module name="PetStoreAutomation" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="RestAssuredFrameworkDesign" target="1.5" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="17" />
   </component>
 </project>

@@ -9,10 +9,10 @@ import java.util.List;
 
 public class DataProviders {
 
-    String sheetname = "Sheet1";
+    static String sheetname = "Sheet1";
 
     @DataProvider(name = "Data")
-    public Object[][] getAllData() throws IOException {
+    static public Object[][] getAllData() throws IOException {
         String path = "RestAssuredDD.xlsx";
         XLutility xl = new XLutility(path);
 
@@ -29,7 +29,7 @@ public class DataProviders {
     }
 
     @DataProvider(name = "Username")
-    public Iterator<Object[]> getUserNames() throws IOException {
+    static public Iterator<Object[]> getUserNames() throws IOException {
         String path = "RestAssuredDD.xlsx";
         XLutility xl = new XLutility(path);
 
